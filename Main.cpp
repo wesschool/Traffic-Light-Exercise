@@ -1,12 +1,12 @@
-#include "CTrafficLight.h"
-#include "States.h"
+#include "TrafficLight.h"
+#include "LightStates.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-	CTrafficLight trafficLight(new redState);
+	TrafficLight trafficLight(new redLight);
 	cout << "The light is " << trafficLight.getLight() << endl;
 	trafficLight.changeLight();
 	cout << "The light is " << trafficLight.getLight() << endl;
